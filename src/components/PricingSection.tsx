@@ -50,7 +50,7 @@ export const PricingSection = () => {
 
             <Button 
               className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground"
-              onClick={() => window.open('https://checkout.passinhodeluz.shop/VCCL1O8SC9U3', '_blank')}
+              onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U3?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}
             >
               COMPRAR CURSO BÁSICO
             </Button>
@@ -84,11 +84,11 @@ export const PricingSection = () => {
                     R$ 497,00
                   </span>
                   <span className="text-5xl font-bold text-primary">
-                    R$ 37
+                    R$ 17,90
                   </span>
                 </div>
                 <p className="text-lg text-card-foreground">
-                  ou 12x de apenas R$ 3,65
+                  ou 12x de apenas R$ 1,66
                 </p>
               </div>
 
@@ -122,7 +122,7 @@ export const PricingSection = () => {
               variant="hero" 
               size="lg" 
               className="w-full animate-pulse"
-              onClick={() => window.open('https://checkout.passinhodeluz.shop/VCCL1O8SC9U4', '_blank')}
+              onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U4?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}
             >
               🔥 GARANTIR ACESSO COMPLETO!
             </Button>
