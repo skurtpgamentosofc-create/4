@@ -104,25 +104,25 @@ export const Testimonials = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-card">
-      <div className="max-w-4xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-card-foreground">
+    <section className="py-12 sm:py-16 px-4 bg-card">
+      <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12">
+        <div className="text-center space-y-3 sm:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-card-foreground px-2">
             Comentários dos Alunos
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-2">
             Veja o que nossos alunos estão dizendo sobre o curso
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id}
-              className="bg-background/80 p-6 rounded-2xl border border-border shadow-lg hover:shadow-xl smooth-transition"
+              className="bg-background/80 p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-border shadow-lg hover:shadow-xl smooth-transition"
             >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
                   <img 
                     src={testimonial.avatar} 
                     alt={`Foto de ${testimonial.name}`}
@@ -130,17 +130,17 @@ export const Testimonials = () => {
                   />
                 </div>
                 
-                <div className="flex-1 space-y-3">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="font-bold text-foreground text-lg">
+                <div className="flex-1 space-y-2 sm:space-y-3 min-w-0">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <div className="min-w-0">
+                      <h3 className="font-bold text-foreground text-base sm:text-lg truncate">
                         {testimonial.name}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-xs sm:text-sm text-muted-foreground">
                         {testimonial.location}
                       </p>
                     </div>
-                    <div className="text-right">
+                    <div className="text-left sm:text-right flex-shrink-0">
                       <div className="flex items-center gap-1 mb-1">
                         {renderStars(testimonial.rating)}
                       </div>
@@ -150,32 +150,32 @@ export const Testimonials = () => {
                     </div>
                   </div>
 
-                  <p className="text-foreground leading-relaxed">
+                  <p className="text-sm sm:text-base text-foreground leading-relaxed">
                     {testimonial.text}
                   </p>
 
-                  <div className="flex items-center gap-6 pt-2">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 pt-2">
                     <button 
                       onClick={() => handleLike(testimonial.id)}
-                      className={`flex items-center gap-2 smooth-transition ${
+                      className={`flex items-center gap-1.5 sm:gap-2 smooth-transition ${
                         likedByUser[testimonial.id] 
                           ? 'text-red-500 hover:text-red-600' 
                           : 'text-primary hover:text-primary/80'
                       }`}
                     >
-                      <Heart className={`w-4 h-4 ${likedByUser[testimonial.id] ? 'fill-current' : ''}`} />
-                      <span className="text-sm">
-                        {likes[testimonial.id] || testimonial.likes} pessoas curtiram
+                      <Heart className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${likedByUser[testimonial.id] ? 'fill-current' : ''}`} />
+                      <span className="text-xs sm:text-sm">
+                        {likes[testimonial.id] || testimonial.likes} curtidas
                       </span>
                     </button>
                     
-                    <button className="flex items-center gap-2 text-muted-foreground hover:text-foreground smooth-transition">
-                      <MessageCircle className="w-4 h-4" />
-                      <span className="text-sm">Curtir</span>
+                    <button className="flex items-center gap-1.5 sm:gap-2 text-muted-foreground hover:text-foreground smooth-transition">
+                      <MessageCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                      <span className="text-xs sm:text-sm">Curtir</span>
                     </button>
                     
-                    <button className="flex items-center gap-2 text-muted-foreground hover:text-foreground smooth-transition">
-                      <span className="text-sm">Compartilhar</span>
+                    <button className="flex items-center gap-1.5 text-muted-foreground hover:text-foreground smooth-transition">
+                      <span className="text-xs sm:text-sm">Compartilhar</span>
                     </button>
                   </div>
                 </div>
@@ -184,9 +184,9 @@ export const Testimonials = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-2xl border border-primary/30">
-            <p className="text-foreground text-lg font-semibold">
+        <div className="text-center px-2">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-primary/30">
+            <p className="text-foreground text-sm sm:text-base md:text-lg font-semibold">
               ⭐ Mais de 10.000 alunos satisfeitos com nota média 4.9/5
             </p>
           </div>
