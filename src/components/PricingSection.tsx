@@ -5,13 +5,13 @@ import { CheckCircle, Clock, Star, X } from "lucide-react";
 
 export const PricingSection = () => {
   return (
-    <section id="oferta" className="py-16 px-4 bg-card">
-      <div className="max-w-6xl mx-auto text-center space-y-12">
-        <div className="space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary">
+    <section id="oferta" className="py-12 sm:py-16 px-4 bg-card">
+      <div className="max-w-6xl mx-auto text-center space-y-8 sm:space-y-12">
+        <div className="space-y-3 sm:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
             Escolha Seu Plano - Oferta Especial!
           </h2>
-          <p className="text-xl text-card-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-card-foreground">
             Comece hoje mesmo a transformar sua vida íntima
           </p>
         </div>

@@ -90,18 +90,18 @@ export const BonusSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-card">
-      <div className="max-w-6xl mx-auto space-y-12">
-        <div className="text-center space-y-6">
-          <div className="inline-block bg-secondary text-secondary-foreground px-6 py-2 rounded-full font-bold text-lg animate-pulse">
+    <section className="py-12 sm:py-16 px-4 bg-card">
+      <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12">
+        <div className="text-center space-y-4 sm:space-y-6">
+          <div className="inline-block bg-secondary text-secondary-foreground px-4 sm:px-6 py-2 rounded-full font-bold text-base sm:text-lg animate-pulse">
             Não é só isso!
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-card-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-card-foreground px-2">
             Ainda Tem Esses Bônus Com Uma Condição Especial
           </h2>
           
-          <div className="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+          <div className="w-16 sm:w-20 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>
 
         {/* Carrossel */}

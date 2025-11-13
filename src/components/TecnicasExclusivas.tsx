@@ -86,13 +86,13 @@ export const TecnicasExclusivas = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-background">
-      <div className="max-w-6xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary">
+    <section className="py-12 sm:py-16 px-4 bg-background">
+      <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12">
+        <div className="text-center space-y-3 sm:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
             Técnicas Exclusivas
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
             Descubra as técnicas mais poderosas de massagem tântrica que transformarão sua vida íntima
           </p>
         </div>
