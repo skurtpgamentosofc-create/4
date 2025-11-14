@@ -2,8 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Star, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const PricingSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="oferta" className="py-12 sm:py-16 px-4 bg-card">
       <div className="max-w-6xl mx-auto text-center space-y-8 sm:space-y-12">
@@ -50,7 +53,7 @@ export const PricingSection = () => {
 
             <Button 
               className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground"
-              onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U3?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}
+              onClick={() => navigate('/upgrade')}
             >
               COMPRAR CURSO BÁSICO
             </Button>
