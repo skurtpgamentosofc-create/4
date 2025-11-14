@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Star, TrendingUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 const UpgradeOffer = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background py-8 px-4">
+  return <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background py-8 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header Alert */}
         <div className="bg-primary text-primary-foreground p-4 rounded-lg text-center mb-8 animate-pulse">
@@ -97,7 +94,60 @@ const UpgradeOffer = () => {
               <span className="text-5xl font-bold text-primary">R$ 14,90</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Economia de R$ 3,00 + Acesso a todo conteúdo!
+              Economia de R$ 3,00 +BônuAcesso a todo conteúdo!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </p>
           </div>
 
@@ -111,20 +161,11 @@ const UpgradeOffer = () => {
 
           {/* CTA Buttons */}
           <div className="space-y-4 pt-4">
-            <Button
-              variant="hero"
-              size="xl"
-              className="w-full"
-              onClick={() => window.open('https://checkout.hojetemofertas.shop/VCCL1O8SCD80', '_blank')}
-            >
+            <Button variant="hero" size="xl" className="w-full" onClick={() => window.open('https://checkout.hojetemofertas.shop/VCCL1O8SCD80', '_blank')}>
               🔥 SIM! QUERO O UPGRADE POR R$ 14,90
             </Button>
             
-            <Button
-              variant="outline"
-              className="w-full"
-              onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U3?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}
-            >
+            <Button variant="outline" className="w-full" onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U3?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}>
               Não, quero continuar com o básico por R$ 10,90
             </Button>
           </div>
@@ -134,8 +175,6 @@ const UpgradeOffer = () => {
           </p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default UpgradeOffer;
