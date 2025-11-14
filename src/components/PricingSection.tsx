@@ -119,6 +119,26 @@ export const PricingSection = () => {
                 <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
                 <span className="text-sm">Garantia de 7 dias</span>
               </div>
+              <div className="flex items-center gap-3 text-card-foreground">
+                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+                <span className="text-sm font-semibold">Técnicas Avançadas</span>
+              </div>
+              <div className="flex items-center gap-3 text-card-foreground">
+                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+                <span className="text-sm">Atualizações automáticas (novas aulas sem pagar nada)</span>
+              </div>
+              <div className="flex items-center gap-3 text-card-foreground">
+                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+                <span className="text-sm">🔥 Bônus 1 — Sequências guiadas em vídeo</span>
+              </div>
+              <div className="flex items-center gap-3 text-card-foreground">
+                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+                <span className="text-sm">🔥 Bônus 2 — Playlist de ambiente terapêutico</span>
+              </div>
+              <div className="flex items-center gap-3 text-card-foreground">
+                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
+                <span className="text-sm">🔥 Bônus 3 — Guia rápido para quem nunca fez a massagem antes</span>
+              </div>
             </div>
 
             <Button 
