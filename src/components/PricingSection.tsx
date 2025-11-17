@@ -155,7 +155,7 @@ export const PricingSection = () => {
                 </div>
                 <div className="flex items-start gap-2 text-card-foreground">
                   <CheckCircle className="w-4 h-4 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm">Suporte especializado</span>
+                  <span className="text-xs sm:text-sm">Videos com Modelos Reais    </span>
                 </div>
                 <div className="flex items-start gap-2 text-card-foreground">
                   <CheckCircle className="w-4 h-4 text-secondary flex-shrink-0 mt-0.5" />
@@ -171,27 +171,27 @@ export const PricingSection = () => {
                 <div className="space-y-1.5 text-xs sm:text-sm">
                   <div className="flex items-start gap-2 text-card-foreground">
                     <span className="text-primary">🔥</span>
-                    <span>Bônus 1 — Guia Prático de Comunicação Íntima</span>
+                    <span>Bônus 1 - Guia Prático de Comunicação Íntima</span>
                   </div>
                   <div className="flex items-start gap-2 text-card-foreground">
                     <span className="text-primary">🔥</span>
-                    <span>Bônus 2 — 10 Sequências de Massagem Prontas (PDF)</span>
+                    <span>Bônus 2 - 10 Sequências de Massagem Prontas </span>
                   </div>
                   <div className="flex items-start gap-2 text-card-foreground">
                     <span className="text-primary">🔥</span>
-                    <span>Bônus 3 — Playlist Exclusiva para Ambiente Perfeito</span>
+                    <span>Bônus 3 - Playlist Exclusiva para Ambiente Perfeito</span>
                   </div>
                   <div className="flex items-start gap-2 text-card-foreground">
                     <span className="text-primary">🔥</span>
-                    <span>Bônus 4 — Mini Curso: Clima, Iluminação e Preparação</span>
+                    <span>Bônus 4 -Mini Curso: Clima, Iluminação e Preparação</span>
                   </div>
                   <div className="flex items-start gap-2 text-card-foreground">
                     <span className="text-primary">🔥</span>
-                    <span>Bônus 5 — Checklist Completo + Planejamento</span>
+                    <span>Bônus 5 - Checklist Completo + Planejamento</span>
                   </div>
                   <div className="flex items-start gap-2 text-card-foreground">
                     <span className="text-primary">🔥</span>
-                    <span>Bônus 6 — Grupo VIP (Exclusivo)</span>
+                    <span>Bônus 6 - Grupo VIP (Exclusivo)</span>
                   </div>
                 </div>
               </div>
