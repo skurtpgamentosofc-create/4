@@ -3,12 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Star, X, Gift, Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 export const PricingSection = () => {
   const navigate = useNavigate();
-
-  return (
-    <section id="oferta" className="py-8 sm:py-12 md:py-16 px-3 sm:px-4 bg-card">
+  return <section id="oferta" className="py-8 sm:py-12 md:py-16 px-3 sm:px-4 bg-card">
       <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8 md:space-y-12">
         <div className="space-y-2 sm:space-y-3 md:space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary px-2">
@@ -26,7 +23,7 @@ export const PricingSection = () => {
               <div className="inline-block bg-secondary/20 text-secondary px-3 py-1 rounded-full text-xs font-bold mb-2">
                 🟢 CURSO BÁSICO
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-foreground">10 Vídeo Aulas — Conteúdo Introdutório</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-foreground">Plano Basico        </h3>
             </div>
 
             <div className="space-y-2 sm:space-y-3">
@@ -80,10 +77,7 @@ export const PricingSection = () => {
               <p className="text-xs sm:text-sm text-muted-foreground">Conteúdo reduzido para iniciantes</p>
             </div>
 
-            <Button 
-              className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xs sm:text-sm h-10 sm:h-11"
-              onClick={() => navigate('/upgrade')}
-            >
+            <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xs sm:text-sm h-10 sm:h-11" onClick={() => navigate('/upgrade')}>
               🟩 COMPRAR CURSO BÁSICO
             </Button>
           </div>
@@ -225,12 +219,7 @@ export const PricingSection = () => {
               </div>
             </div>
 
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="w-full animate-pulse h-auto py-3 text-xs sm:text-sm md:text-base"
-              onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U4?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}
-            >
+            <Button variant="hero" size="lg" className="w-full animate-pulse h-auto py-3 text-xs sm:text-sm md:text-base" onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U4?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}>
               🟥 GARANTIR ACESSO COMPLETO AGORA
             </Button>
             
@@ -250,6 +239,5 @@ export const PricingSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
