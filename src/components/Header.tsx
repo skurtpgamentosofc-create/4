@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Clock } from "lucide-react";
 
 export const Header = () => {
-  const [timeLeft, setTimeLeft] = useState(600); // 10 minutos em segundos
+  const [timeLeft, setTimeLeft] = useState(514); // 8:34 em segundos
   
   useEffect(() => {
     const timer = setInterval(() => {
