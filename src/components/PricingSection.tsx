@@ -220,7 +220,7 @@ export const PricingSection = () => {
             </div>
 
             <Button variant="hero" size="lg" className="w-full animate-pulse h-auto py-3 text-xs sm:text-sm md:text-base" onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U4?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}>
-              🟥 GARANTIR ACESSO COMPLETO AGORA
+              🚀 🟥 GARANTIR ACESSO COMPLETO AGORA
             </Button>
             
             <p className="text-xs text-muted-foreground text-center">
