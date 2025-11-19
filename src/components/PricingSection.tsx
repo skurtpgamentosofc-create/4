@@ -136,10 +136,10 @@ export const PricingSection = () => {
                 </span>
               </div>
               <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary text-center">
-                R$ 17,90
+                R$ 19,90
               </div>
               <p className="text-sm sm:text-base text-card-foreground text-center">
-                ou 12× de R$ 1,66
+                ou 12× de R$ 1,84
               </p>
             </div>
 
