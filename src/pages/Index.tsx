@@ -9,10 +9,8 @@ import { BonusSection } from "@/components/BonusSection";
 import { PricingSection } from "@/components/PricingSection";
 import { PurchaseNotification } from "@/components/PurchaseNotification";
 import { FAQ } from "@/components/FAQ";
-
 const Index = () => {
-  return (
-    <main className="min-h-screen">
+  return <main className="min-h-screen">
       <PurchaseNotification />
       <Header />
       <Hero />
@@ -20,12 +18,10 @@ const Index = () => {
       <CourseContent />
       <TecnicasExclusivas />
       <Testimonials />
-      <WhyBuyCourse />
+      
       <BonusSection />
       <PricingSection />
       <FAQ />
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
