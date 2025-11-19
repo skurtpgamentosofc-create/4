@@ -90,7 +90,7 @@ const UpgradeOffer = () => {
               Pague apenas mais R$ 4,00 e tenha acesso a TUDO!
             </p>
             <div className="flex items-center justify-center gap-4">
-              <span className="text-2xl text-muted-foreground line-through">R$ 17,90</span>
+              <span className="text-2xl text-muted-foreground line-through">R$ 19,90</span>
               <span className="text-5xl font-bold text-primary">R$ 14,90</span>
             </div>
             <p className="text-sm text-muted-foreground">
