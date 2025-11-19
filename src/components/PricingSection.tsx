@@ -3,9 +3,30 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Clock, Star, X, Gift, Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+
 export const PricingSection = () => {
   const navigate = useNavigate();
-  return <section id="oferta" className="py-8 sm:py-12 md:py-16 px-3 sm:px-4 bg-card">
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+  return <section id="oferta" className="py-8 sm:py-12 md:py-16 px-3 sm:px-4 bg-card" ref={sectionRef}>
       <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8 md:space-y-12">
         <div className="space-y-2 sm:space-y-3 md:space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary px-2">
@@ -18,7 +39,9 @@ export const PricingSection = () => {
 
         <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
           {/* Curso Básico */}
-          <div className="bg-background border-2 border-secondary rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-4 sm:space-y-6 hover:border-secondary/70 smooth-transition">
+          <div className={`bg-background border-2 border-secondary rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-4 sm:space-y-6 hover:border-secondary/70 smooth-transition transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
             <div className="space-y-1 sm:space-y-2">
               <div className="inline-block bg-secondary/20 text-secondary px-3 py-1 rounded-full text-xs font-bold mb-2">
                 🟢 CURSO BÁSICO
@@ -83,7 +106,9 @@ export const PricingSection = () => {
           </div>
 
           {/* Curso Completo - Destacado */}
-          <div className="relative bg-gradient-to-br from-destructive/10 to-primary/20 border-2 border-destructive rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-3 sm:space-y-4 glow-effect">
+          <div className={`relative bg-gradient-to-br from-destructive/10 to-primary/20 border-2 border-destructive rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-3 sm:space-y-4 glow-effect transition-all duration-700 delay-150 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
             {/* Badge de Mais Popular */}
             <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-destructive text-destructive-foreground px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
