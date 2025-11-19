@@ -161,11 +161,11 @@ const UpgradeOffer = () => {
 
           {/* CTA Buttons */}
           <div className="space-y-3 pt-4">
-            <Button variant="hero" size="lg" className="w-full h-auto py-3 px-4 text-sm sm:text-base whitespace-normal leading-tight" onClick={() => window.open('https://checkout.hojetemofertas.shop/VCCL1O8SCD80', '_blank')}>
+            <Button variant="hero" size="lg" className="w-full h-auto py-3 px-4 text-sm sm:text-base whitespace-normal leading-tight" onClick={() => window.open('https://www.ggcheckout.com/checkout/v2/drmq4vAs8xjOY41zah67', '_blank')}>
               🔥 SIM! QUERO O UPGRADE POR R$ 14,90
             </Button>
             
-            <Button variant="outline" className="w-full h-auto py-3 px-4 text-xs sm:text-sm whitespace-normal leading-tight" onClick={() => window.open('https://checkout.economizareagua.shop/VCCL1O8SC9U3?utm_source=FBjLj691375a281391c320843c81e&utm_campaign=CampanhaTesteUtms%7C00000000000000001&utm_medium=adsetTesteUtms%7C00000000000000002&utm_content=ContentTesteUtms%7C00000000000000003&utm_term=PlacementTesteUtms', '_blank')}>
+            <Button variant="outline" className="w-full h-auto py-3 px-4 text-xs sm:text-sm whitespace-normal leading-tight" onClick={() => window.open('https://www.ggcheckout.com/checkout/v2/BKWW5COcHUlsNU4t0K1R', '_blank')}>
               Não, quero continuar com o básico por R$ 10,90
             </Button>
           </div>
