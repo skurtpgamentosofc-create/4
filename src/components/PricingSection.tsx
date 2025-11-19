@@ -101,7 +101,7 @@ export const PricingSection = () => {
             </div>
 
             <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xs sm:text-sm h-10 sm:h-11" onClick={() => navigate('/upgrade')}>
-              🟩 COMPRAR CURSO BÁSICO
+              COMPRAR CURSO BÁSICO
             </Button>
           </div>
 
@@ -245,7 +245,7 @@ export const PricingSection = () => {
             </div>
 
             <Button variant="hero" size="lg" className="w-full animate-rocket h-auto py-3 text-xs sm:text-sm md:text-base" onClick={() => window.open('https://www.ggcheckout.com/checkout/v2/cCET3nT1Rz4KkFgMA3iV', '_blank')}>
-              🟥 GARANTIR ACESSO COMPLETO AGORA
+              GARANTIR ACESSO COMPLETO AGORA
             </Button>
             
             <p className="text-xs text-muted-foreground text-center">
