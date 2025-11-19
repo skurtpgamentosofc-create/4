@@ -162,7 +162,7 @@ const UpgradeOffer = () => {
           {/* CTA Buttons */}
           <div className="space-y-3 pt-4">
             <Button variant="hero" size="lg" className="w-full h-auto py-3 px-4 text-sm sm:text-base whitespace-normal leading-tight" onClick={() => window.open('https://www.ggcheckout.com/checkout/v2/drmq4vAs8xjOY41zah67', '_blank')}>
-              🔥 SIM! QUERO O UPGRADE POR R$ 14,90
+              SIM! QUERO O UPGRADE POR R$ 14,90
             </Button>
             
             <Button variant="outline" className="w-full h-auto py-3 px-4 text-xs sm:text-sm whitespace-normal leading-tight" onClick={() => window.open('https://www.ggcheckout.com/checkout/v2/BKWW5COcHUlsNU4t0K1R', '_blank')}>
