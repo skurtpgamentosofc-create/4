@@ -109,11 +109,16 @@ export const PricingSection = () => {
           <div className={`relative bg-gradient-to-br from-destructive/10 to-primary/20 border-2 border-destructive rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-3 sm:space-y-4 glow-effect transition-all duration-700 delay-150 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            {/* Badge de Mais Popular */}
-            <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-destructive text-destructive-foreground px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
-                🔴 MAIS POPULAR
-              </span>
+            {/* Badge de Mais Vendido */}
+            <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-10">
+              <div className="relative">
+                <div className="absolute inset-0 bg-primary blur-md opacity-60 animate-pulse"></div>
+                <span className="relative bg-gradient-to-r from-primary via-destructive to-primary text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-xl border-2 border-white/20 flex items-center gap-1.5 sm:gap-2">
+                  <Star className="w-3 h-3 sm:w-4 sm:h-4 fill-white" />
+                  MAIS VENDIDO
+                  <Star className="w-3 h-3 sm:w-4 sm:h-4 fill-white" />
+                </span>
+              </div>
             </div>
 
             <div className="space-y-1 sm:space-y-2 pt-3 sm:pt-4">
